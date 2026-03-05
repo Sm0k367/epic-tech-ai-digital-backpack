@@ -6,6 +6,7 @@ import { OrbitControls, Stars } from "@react-three/drei";
 // Club bling components
 import NeonSidebar from "../components/NeonSidebar";
 import AnimatedHeader from "../components/AnimatedHeader";
+import LiveAvatars from "../components/LiveAvatars";
 import MusicVault from "../components/MusicVault";
 import AIChat from "../components/AIChat";
 import CodeVaults from "../components/CodeVaults";
@@ -106,6 +107,9 @@ transition={{ type:"spring", stiffness:110, damping:8 }}
 >
 EPIC TECH AI DIGITAL BACKPACK
 </GlowText>
+
+{/* Avatars Party Row */}
+<LiveAvatars />
 
 {/* Main dashboard modules */}
 <MainGrid>
