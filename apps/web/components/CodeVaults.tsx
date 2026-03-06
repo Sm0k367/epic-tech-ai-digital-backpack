@@ -1,5 +1,3 @@
-apps/web/components/CodeVaults.tsx
-
 import { motion } from "framer-motion";
 import styled, { keyframes } from "styled-components";
 import { FaCode } from "react-icons/fa";
