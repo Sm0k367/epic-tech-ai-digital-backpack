@@ -37,8 +37,8 @@ return (
 {/* Public badge/logo for social link/unfurl */}
 <link rel="icon" href="/backpack-logo-cyberpunk.svg" />
 {/* Google Fonts for extra style */}
-<link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="true"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 <meta property="og:image" content="/backpack-logo-cyberpunk.svg" />
 <meta property="og:title" content="Epic Tech AI Digital Backpack" />
