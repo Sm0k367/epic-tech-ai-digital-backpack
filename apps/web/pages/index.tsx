@@ -73,7 +73,7 @@ return (
 {/* Animated cosmic digital club background */}
 <div style={{ position: "fixed", inset: 0, zIndex: 0, pointerEvents: "none" }}>
 <Canvas camera={{ position: [0,0,4], fov: 75 }}>
-<Stars radius={80} depth={60} count={3600} factor={6} fade sat={0.85} />
+<Stars radius={80} depth={60} count={3600} factor={6} fade saturation={0.85} />
 <ambientLight intensity={0.6} />
 <OrbitControls autoRotate={true} enableZoom={false} enablePan={false} />
 </Canvas>
