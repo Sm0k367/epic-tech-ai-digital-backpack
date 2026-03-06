@@ -1,0 +1,12 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.exclude": {
+    "**/.turbo": true,
+    "**/dist": true,
+    "**/.next": true
+  }
+}
