@@ -7,3 +7,9 @@
     @apply bg-black text-white;
   }
 }
+
+@layer utilities {
+  .ring-glow {
+    @apply ring-2 ring-cyan-400/60 ring-offset-2 ring-offset-black;
+  }
+}
