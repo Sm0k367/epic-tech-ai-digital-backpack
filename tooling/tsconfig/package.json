@@ -1,0 +1,5 @@
+{
+  "name": "@epic/tsconfig",
+  "version": "0.0.0",
+  "files": ["base.json"]
+}
