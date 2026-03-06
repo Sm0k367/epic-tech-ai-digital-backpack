@@ -1,0 +1,22 @@
+{
+  "name": "epic-tech-ai-digital-backpack",
+  "version": "1.0.0",
+  "description": "Self-healing creative ecosystem—zero config, infinite scale",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "deploy": "vercel --prod"
+  },
+  "devDependencies": {
+    "turbo": "latest",
+    "vercel": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
