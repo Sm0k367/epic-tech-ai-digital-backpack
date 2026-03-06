@@ -1,0 +1,16 @@
+{
+  "name": "@epic/core",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build:wasm": "cargo build --release --target wasm32-unknown-unknown",
+    "clean": "rm -rf .turbo pkg target"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.12",
+    "typescript": "5.5.4"
+  }
+}
