@@ -1,4 +1,5 @@
 'use client';
+export const dynamic = 'force-dynamic';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { AppShell } from '@/components/AppShell';
 import { useToast } from '@/components/ui/Toast';
