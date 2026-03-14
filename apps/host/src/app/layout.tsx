@@ -1,5 +1,4 @@
 import './globals.css';
-export const runtime = 'edge';
 
 export const metadata = {
   title: 'Epic Tech AI – Digital Backpack',
