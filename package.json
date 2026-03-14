@@ -1,7 +1,7 @@
 {
   "name": "epic-tech-ai-digital-backpack",
-  "version": "1.0.0",
-  "description": "Self-healing creative ecosystem—zero config, infinite scale",
+  "version": "2.0.0",
+  "description": "AI Digital Backpack — Full-stack creative ecosystem with free & API tiers",
   "private": true,
   "scripts": {
     "dev": "npm run dev --workspace=apps/host",
@@ -10,8 +10,7 @@
     "lint": "npm run lint --workspace=apps/host"
   },
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "apps/host"
   ],
   "engines": {
     "node": ">=18.17.0",

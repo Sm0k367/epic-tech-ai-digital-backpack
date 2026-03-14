@@ -1,11 +1,13 @@
-import { useEffect, useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 export function useOnce(fn: () => void) {
-  const ran = useRef(false);
+  const called = useRef(false);
   useEffect(() => {
-    if (!ran.current) {
-      ran.current = true;
+    if (!called.current) {
+      called.current = true;
       fn();
     }
-  }, [fn]);
+    // intentionally empty deps — run once on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 }

@@ -6,11 +6,16 @@ export async function GET(req: NextRequest) {
   return NextResponse.json({
     success: true,
     data: {
-      status: 'ok',
-      version: '2.0.0',
       tier: ctx.tier,
-      timestamp: new Date().toISOString(),
-      features: ['notes', 'tasks', 'flashcards', 'chat', 'code-snippets'],
+      rateLimit: ctx.rateLimit,
+      features: {
+        notes: true,
+        tasks: true,
+        flashcards: true,
+        chat: true,
+        codeSnippets: true,
+      },
+      apiVersion: '2.0.0',
     },
     tier: ctx.tier,
   }, {
@@ -23,12 +28,5 @@ export async function GET(req: NextRequest) {
 }
 
 export async function OPTIONS() {
-  return new NextResponse(null, {
-    status: 204,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type, X-API-Key, Authorization',
-    },
-  });
+  return new NextResponse(null, { status: 204, headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type, X-API-Key, Authorization' } });
 }
