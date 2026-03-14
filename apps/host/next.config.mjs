@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Reduce memory usage during build
   experimental: {
     workerThreads: false,
     cpus: 1,
@@ -25,4 +24,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
