@@ -11,13 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 8
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: 'pnpm'
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm lint
-      - run: pnpm build
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Lint
+        run: npm run lint --workspace=apps/host
+
+      - name: Build
+        run: npm run build --workspace=apps/host
+        env:
+          NODE_OPTIONS: '--max-old-space-size=4096'

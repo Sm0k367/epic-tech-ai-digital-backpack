@@ -1,38 +1,11 @@
 version: 2
 updates:
-  # Enable version updates for npm
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10
-    versioning-strategy: increase
-    
   - package-ecosystem: "npm"
     directory: "/apps/host"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 10
-    
-  - package-ecosystem: "npm"
-    directory: "/packages/ui"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-    
-  - package-ecosystem: "npm"
-    directory: "/packages/core"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-    
-  - package-ecosystem: "npm"
-    directory: "/packages/bus"
-    schedule:
-      interval: "weekly"
     open-pull-requests-limit: 5
 
-  # GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
