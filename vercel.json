@@ -1,6 +1,8 @@
 {
-  "buildCommand": "cd apps/host && npm install --legacy-peer-deps && npm run build",
-  "installCommand": "echo 'install handled in buildCommand'",
-  "outputDirectory": "apps/host/.next",
-  "framework": "nextjs"
+  "version": 2,
+  "framework": "nextjs",
+  "rootDirectory": "apps/host",
+  "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next"
 }
