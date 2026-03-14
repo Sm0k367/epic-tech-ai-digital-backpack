@@ -4,19 +4,17 @@
   "description": "Self-healing creative ecosystem—zero config, infinite scale",
   "private": true,
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "start": "turbo run start",
-    "lint": "turbo run lint",
-    "clean": "turbo run clean",
-    "deploy": "vercel --prod"
+    "dev": "npm run dev --workspace=apps/host",
+    "build": "npm run build --workspace=apps/host",
+    "start": "npm run start --workspace=apps/host",
+    "lint": "npm run lint --workspace=apps/host"
   },
-  "devDependencies": {
-    "turbo": "^2.3.3",
-    "vercel": "^37.21.1"
-  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "engines": {
-    "node": ">=18.17.0"
-  },
-  "packageManager": "pnpm@9.15.4"
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  }
 }

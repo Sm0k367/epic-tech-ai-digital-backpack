@@ -19,18 +19,13 @@ jobs:
         with:
           node-version: '18.17.0'
       
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9.15.4
-      
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: npm install
       
       - name: Run security audit
-        run: pnpm audit --audit-level=moderate
+        run: npm audit --audit-level=moderate
         continue-on-error: true
       
       - name: Check for outdated packages
-        run: pnpm outdated
+        run: npm outdated
         continue-on-error: true
