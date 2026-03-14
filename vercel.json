@@ -1,7 +1,6 @@
 {
-  "buildCommand": "npm run build --workspace=apps/host",
-  "devCommand": "npm run dev --workspace=apps/host",
-  "installCommand": "npm install",
+  "buildCommand": "cd apps/host && npm install --legacy-peer-deps && npm run build",
+  "installCommand": "echo 'install handled in buildCommand'",
   "outputDirectory": "apps/host/.next",
   "framework": "nextjs"
 }
