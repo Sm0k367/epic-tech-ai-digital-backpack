@@ -4,14 +4,32 @@
   "description": "AI Digital Backpack — Full-stack creative ecosystem with free & API tiers",
   "private": true,
   "scripts": {
-    "dev": "npm run dev --workspace=apps/host",
-    "build": "npm run build --workspace=apps/host",
-    "start": "npm run start --workspace=apps/host",
-    "lint": "npm run lint --workspace=apps/host"
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "workspaces": [
-    "apps/host"
-  ],
+  "dependencies": {
+    "next": "15.3.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "lucide-react": "^0.469.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.6",
+    "@types/react-dom": "^19.0.2",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "15.3.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  },
   "engines": {
     "node": ">=18.17.0",
     "npm": ">=9.0.0"
