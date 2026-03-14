@@ -10,7 +10,7 @@
     "clean": "rm -rf .turbo pkg target"
   },
   "devDependencies": {
-    "@types/node": "20.14.12",
-    "typescript": "5.5.4"
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
   }
 }

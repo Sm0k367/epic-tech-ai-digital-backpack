@@ -12,11 +12,11 @@
     "deploy": "vercel --prod"
   },
   "devDependencies": {
-    "turbo": "latest",
-    "vercel": "latest"
+    "turbo": "^2.3.3",
+    "vercel": "^37.21.1"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=18.17.0"
   },
-  "packageManager": "pnpm@8.15.0"
+  "packageManager": "pnpm@9.15.4"
 }
